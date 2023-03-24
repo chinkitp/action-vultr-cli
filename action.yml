@@ -1,0 +1,12 @@
+name: 'Github Action for vultr-cli'
+description: 'Use the vult-cli action to manage vultr cloud resources.'
+inputs:
+  version:
+    description: 'Version of vultr-cli to install, default is latest'
+    default: 'latest'
+  token:
+    description: 'Vultr API Token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
